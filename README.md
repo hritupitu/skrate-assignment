@@ -53,11 +53,7 @@ An example return value for this request is:
 {
 	"_id":  "61bc59e60947bedeee73d1b3",
 	"username":  "Vedant"
-},
-{
-
-	"_id":  "61bc63a71a29686080ef16e5",
-	"username":  "neel"
+}
 }]
 ```
 
