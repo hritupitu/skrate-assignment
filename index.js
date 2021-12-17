@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 // set up our express app
 const app = express();
 
+
 uri =
 	"mongodb+srv://hritvik:hritvik@skrate-assignment.ioawu.mongodb.net/skrate-assignment?retryWrites=true&w=majority";
 
