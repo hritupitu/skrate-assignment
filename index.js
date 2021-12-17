@@ -21,7 +21,8 @@ app.get("/",function(req,res){
 
 app.use(express.json());
 // initialize routes
-app.use('/',require('./routes/api'));
+app.use('/users',require('./apis/userApis'));
+app.use('/meetings',require('./apis/meetingApis'));
 
 // error handling middleware
 app.use(function(err,req,res,next){
