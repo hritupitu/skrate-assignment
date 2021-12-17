@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 
 const Meeting = require("../models/meetings");
+const User = require("../models/users");
 
 router.post("/new", async function (req, res, next) {
 	Meeting.create({
