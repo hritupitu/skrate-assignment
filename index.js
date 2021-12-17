@@ -17,7 +17,7 @@ mongoose.Promise = global.Promise;
 app.use(express.static('public'));
 
 app.get("/",function(req,res){
-    res.send("Hi!")
+    res.send("Hello! Head to the <a href='https://github.com/hritupitu/skrate-assignment'>Github Link</a> and look through the README for the API details.")
 })
 
 app.use(express.json());
