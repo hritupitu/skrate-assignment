@@ -100,16 +100,22 @@ This JSON will consist of `_id` which holds the meeting id along with elements `
 Currently, the only secret set up for this project is the `DB_URI` secret which is set up on the replit.
 In case it becomes unavailable for use on your computer, you can add it again with 
 
-```js
-{
-  DB_URI:"mongodb+srv://hritvik:TJ8nAsLjjRm25u1T@skrate-assignment.ioawu.mongodb.net/skrate-assignment?retryWrites=true&w=majority"
-}
-```
+    KEY: DB_URI
+    VALUE: mongodb+srv://hritvik:TJ8nAsLjjRm25u1T@skrate-assignment.ioawu.mongodb.net/skrate-assignment?retryWrites=true&w=majority
 
 I understand that it is a huge security flaw to list out the secret key on a public repo and I do not plan to do this during production 😀
 
 ## Current Security Flaws
 
- - Currently the `DB_URI` is written in the README.md
+ - Currently the `DB_URI` is written in the [README](https://github.com/hritupitu/skrate-assignment/blob/master/README.md)
  - The IP whitelist for database access is set to everyone
  - No authentication APIs set up to mitigate said issues
+
+## External Libraries
+
+    nodemon - for ease of development
+    mongodb - for database
+    mongoose - for MongoDB support
+    express - For server
+    dotenv - To load environment objects into server
+    
