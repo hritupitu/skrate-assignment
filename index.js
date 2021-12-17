@@ -6,11 +6,11 @@ const dotenv = require('dotenv');
 dotenv.config();
 const app = express();
 
-uri =
-	"mongodb+srv://hritvik:hritvik@skrate-assignment.ioawu.mongodb.net/skrate-assignment?retryWrites=true&w=majority";
+
+const mySecret = process.env['DB_URI']
 
 // connect to mongodb
-mongoose.connect(uri);
+mongoose.connect(mySecret);
 mongoose.Promise = global.Promise;
 
 app.use(express.static('public'));
