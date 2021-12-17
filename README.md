@@ -27,6 +27,9 @@ If you decide to test this on your local machine, run:
     $ npm start
 Alternatively, you can also run:
 
+    $ git clone https://github.com/hritupitu/skrate-assignment.git
+    $ cd skrate-assignment
+    $ npm install
     $ npm run dev
 The difference here is that I use nodemon for dev purposes and if you decide to make changes to the files, it will be greatly helpful.
 
