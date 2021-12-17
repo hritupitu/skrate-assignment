@@ -19,7 +19,7 @@ app.get("/",function(req,res){
 
 app.use(express.json());
 // initialize routes
-app.use('/api',require('./routes/api'));
+app.use('/',require('./routes/api'));
 
 // error handling middleware
 app.use(function(err,req,res,next){
@@ -29,5 +29,5 @@ app.use(function(err,req,res,next){
 
 // listen for requests
 app.listen(process.env.port || 5000, function(){
-    console.log('Ready to Go!');
+    console.log('The Server is Ready!');
 });
