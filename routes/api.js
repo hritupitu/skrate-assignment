@@ -21,11 +21,7 @@ router.post("/users/new", function (req, res, next) {
 		.catch(next);
 });
 
-router.delete("users/del", function (req, res, next) {
-	User.deleteOne({ _id: req.body }).then(function () {
-		console.log("User with UID " + req.body + " has been deleted");
-	});
-});
+
 
 router.post("/meetings/new", async function (req, res, next) {
 	Meeting.create({
@@ -38,11 +34,6 @@ router.post("/meetings/new", async function (req, res, next) {
 		.catch(next);
 });
 
-router.delete("meetings/del", function (req, res, next) {
-	Meeting.deleteOne({ _id: req.body }).then(function () {
-		console.log("Meeting with UID " + req.body + " has been deleted");
-	});
-});
 
 router.get("/meetings/all", function (req, res, next) {
 	Meeting.find({})

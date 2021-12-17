@@ -4,7 +4,6 @@ const mongoose = require('mongoose');
 // set up our express app
 const app = express();
 
-
 uri =
 	"mongodb+srv://hritvik:hritvik@skrate-assignment.ioawu.mongodb.net/skrate-assignment?retryWrites=true&w=majority";
 
@@ -28,7 +27,9 @@ app.use(function(err,req,res,next){
     res.status(422).send({error: err.message});
 });
 
+const PORT = process.env.PORT || 5000;
+
 // listen for requests
-app.listen(process.env.port || 5000, function(){
+app.listen(PORT, function(){
     console.log('The Server is Ready!');
 });
